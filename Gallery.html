@@ -1,0 +1,169 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foody Heist | Gallery</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        nav a,footer a{
+            color: black;
+            font-family: 'Courier New', Courier, monospace;
+            text-decoration: none;
+            padding: 10px 30px;
+        }
+        nav, footer{
+            background: rgba(226, 224, 224, 0.5);
+        }
+        nav{
+           display: flex; 
+           justify-content: space-around;
+        }
+        nav a:hover,footer a:hover{
+            color: gray;
+        }
+
+        footer div{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* main */
+        section{
+            text-align: center;
+            background-color: lightgrey;
+            border-radius: 10px;
+            margin:  20px 70px;
+            padding:  5px 30px;   
+        }
+        .section2,.section3{
+            padding-bottom: 35px;
+        }
+        .section3{
+            padding-left: 260px;
+            padding-right: 260px;
+        }
+        .images{
+            display: flex;
+            justify-content: space-around;
+        }
+        .image{
+            height: 300px;
+            border-radius: 10px;
+
+        }
+        .column{
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+        }
+        .column:hover{
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+            transform: scale(1.07);
+        }
+        .button{
+            margin-bottom: 20px;
+        }
+        input[type]{
+            background-color: lightgrey;
+            border: none;
+            border-radius: 10px;
+            height: 40px;
+            width: 400px;
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            transition: background 1s;
+        }
+        input[type]:hover{
+            background-color: rgb(240, 233, 233);
+            cursor: pointer;
+            font-size: large;
+            transform: scale(1.09);
+        }
+
+    </style>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="Index.html">Home</a>
+        <a href="Order_Online.html">Order Online</a>
+        <a href="#">Gallery</a>
+        <a href="Reservations.html">Reservations</a>
+        <a href="About_Us.html">About Us</a>
+        <a href="Reviezw.html">Reviews</a>
+        <a href="Feedback.html">Feedback</a>   
+    </nav>
+
+    <main>
+        <section class="section1">
+            <div class="qoute">
+                <h2>We believe in the simple pleasures of life. <br>Good food, fresh ingredients, and awesome vibes. <br> Welcome to Foodie Heist, make yourself at home :)</h2>
+            </div>
+
+        </section>
+
+        <section class="section2">
+            <div class="text">
+                <h2>Our Fan's Favourite</h2>
+                <h4>An Offer You'll Love</h4>
+            </div>
+            <div class="images">
+                <div class="column">
+                    <img class="image" src="pictures/image01.webp" alt="">
+                </div>
+                <div class="column">
+                    <img class="image" src="pictures/image02.webp" alt="">
+                </div>
+                <div class="column">
+                    <img class="image" src="pictures/image03.webp" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="section3">
+            <div class="text">
+                <h2>Gather Around Table with Our Family Bundle</h2>
+            </div>
+            <div class="images">
+                <div class="column">
+                    <img class="image" src="pictures/image04.webp" alt="">
+                </div>
+                <div class="column">
+                    <img class="image" src="pictures/image05.webp" alt="">
+                </div>
+            </div>
+        </section>
+
+        <div class="button">
+            <center>
+                <form action="Order_Online.html">
+                    <input type="submit" value="Let's Order Something !">
+                </form>
+            </center>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div>
+            <div>
+                <a href="#">FAQ</a>
+                <a href="Feedback.html">Contact Us</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Refund Policy</a>
+            </div>  
+            <div>
+                <a href="#">&copy; 2021 | Foodie Heist</a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

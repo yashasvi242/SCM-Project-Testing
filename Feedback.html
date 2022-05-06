@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedbacks | Foodie Heist</title>
+    
+    <style>
+
+        *{box-sizing: border-box;}
+
+        body{
+            margin: 0px;
+            background-image: url(Pictures/feedback-bg.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .container{
+            font-family: 'Courier New', Courier, monospace;
+            margin: 80px 450px;
+            padding: 4px 10px;
+            padding-bottom: 25px;
+            background-color: rgba(128, 128, 128, 0.096);
+            border: 1px solid rgba(0, 0, 0, 0.192);
+            border-radius: 10px;
+        }
+
+        textarea{
+            height: 100px;
+        }
+
+        input[type],textarea{
+            font-family: 'Courier New', Courier, monospace;
+            background-color: rgba(0, 0, 0, 0);
+            border: 1px solid rgba(128, 128, 128, 0.26);
+            font-size: 16px;
+            width: 90%;
+            margin: 5px 0px;
+            padding: 5px 10px;
+        }
+
+        input[type="submit"]:hover{
+            cursor:pointer;
+            background-color: rgba(128, 128, 128, 0.5);
+            color: whitesmoke;
+        }
+
+        nav a,footer a{
+            color: black;
+            font-family: 'Courier New', Courier, monospace;
+            text-decoration: none;
+            padding: 10px 30px;
+        }
+        nav, footer{
+            background: rgba(226, 224, 224, 0.5);
+        }
+        nav{
+           display: flex; 
+           justify-content: space-around;
+        }
+        nav a:hover,footer a:hover{
+            color: gray;
+        }
+        
+        footer div{
+            display: flex;
+            justify-content: space-between;
+        }
+ 
+
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="Index.html">Home</a>
+        <a href="Order_Online.html">Order Online</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Reservations.html">Reservations</a>
+        <a href="About_Us.html">About Us</a>
+        <a href="Review.html">Reviews</a>
+        <a href="Feedback.html">Feedback</a>   
+    </nav>
+
+    <main>
+        <!-- CONTACT US FORM -->
+        <center>
+            <div class="container">
+                <form action="#">
+
+                    <h1>We Welcome<br>Your Feedback</h1>
+                    <input type="text" name="first_name" id="" placeholder="First name">
+                    <input type="text" name="last_name" id="" placeholder="Last Name">
+                    <input type="email" name="email" id="email" required placeholder="E-mail">
+                    <input type="text" name="subject" id="subject" placeholder="Subject">
+                    <textarea name="message" id="message" cols="30" rows="5" placeholder="Your message here .."></textarea>
+                    <input type="submit" value="Send Feedback !">
+                </form>
+            </div>
+        </center>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div>
+            <div>
+                <a href="#">FAQ</a>
+                <a href="Feedback.html">Contact Us</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Refund Policy</a>
+            </div>  
+            <div>
+                <a href="#">&copy; 2021 | Foodie Heist</a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

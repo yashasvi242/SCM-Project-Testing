@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations | Foodie Heist</title>
+    <script>
+        function validate(){
+            var adults=document.myform.adults.value;
+            var children=document.myform.children.value;
+            var phoneno=document.myform.phoneno.value;
+            var name=document.myform.name.value;
+            var email=document.myform.email.value;
+            
+            if(adults>6 || adults<2){
+                alert("seat can't be reserved for more than 6 adults and less than 2 adults");
+                return false;
+            }
+            else if(children<0 || children>4){
+                alert("seat can't be reserved for more than 4 children");
+                return false;
+            }
+            else if(phoneno.length>10 || phoneno.length<10){
+                alert("please enter a valide phone number");
+                return;
+            }
+            
+            
+            else if(email=="" || email==null){
+                alert("email can't be blank");
+                return false;
+            }
+            else{
+                alert("your seats has been reserved successfully");
+            }
+            
+        }
+    </script>
+
+    <style>
+         html{
+             box-sizing: border-box;
+         }
+
+        body{
+            margin: 0px;
+            font-family: 'Courier New', Courier, monospace;
+            background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(pictures/reserve.jfif);
+            background-size: screen;
+            width: 100%;
+        }
+
+        h2{
+            text-align: center;
+            font-size: 40px;
+            color: white;
+            text-shadow: 0.5 0.3rem 0.1rem black;
+        }
+
+        .box{
+            background-color: rgba(128, 128, 128, 0.5);
+            border-radius: 20px;
+            margin: 30px 450px;
+            margin-bottom: 40px;
+            padding: 20px;
+
+        }
+
+        input[type]{
+            width: 100%;
+            font-weight: bold;
+            color: black;
+            height: 30px;
+            margin: 8px 0px;
+            background-color: rgba(0, 0, 0, 0);
+            border: 1px solid rgba(172, 169, 169, 0.603);
+        }
+
+        ::placeholder {
+            color: black;
+            font-family: 'Courier New', Courier, monospace;
+            padding-left: 10px;
+        }
+
+        input[type="date"]:before,input[type="time"]:before {
+            content: attr(placeholder)!important;
+            padding-left: 10px;
+        }
+
+        input[type="submit"]{
+            transition: background 0.2s;
+        }
+
+        input[type="submit"]:hover{
+            color: white;
+            background-color: black;
+            cursor: pointer;
+        }
+        nav a,footer a{
+            color: black;
+            font-family: 'Courier New', Courier, monospace;
+            text-decoration: none;
+            padding: 10px 30px;
+        }
+        nav, footer{
+            background: rgba(226, 224, 224, 0.5);
+        }
+        nav{
+           display: flex; 
+           justify-content: space-around;
+        }
+        nav a:hover,footer a:hover{
+            color: whitesmoke;
+        }
+        
+        footer div{
+            display: flex;
+            justify-content: space-between;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="Index.html">Home</a>
+        <a href="Order_Online.html">Order Online</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Reservations.html">Reservations</a>
+        <a href="About_Us.html">About Us</a>
+        <a href="Review.html">Reviews</a>
+        <a href="Feedback.html">Feedback</a>   
+    </nav> 
+    
+    <h2>Book your table !</h2>
+
+    <!-- RESEVATION FORM -->
+    <div class="box">
+        <div class="form">
+            <form action="#" name="myform" onsubmit="return validate()">
+                <input type="text" name="name" id="name" required placeholder="Name">
+                <input type="email" name="email" id="email" placeholder="E-mail">
+                <input type="number" name="phoneno" id="phone-no" required placeholder="Phone Number">
+                <input type="date" name="date" id="date" placeholder="Booking date :" required>
+                <input type="time" name="time" id="time" placeholder="Booking Time :" required>
+                <input type="number" name="adults" id="adults" placeholder="Number of Adults" required>
+                <input type="number" name="children" id="children" placeholder="Number of Children" required>
+                
+                <input type="submit" value="Reserve a Table">
+            </form>
+        </div>
+    </div>
+        
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div>
+            <div>
+                <a href="#">FAQ</a>
+                <a href="Feedback.html">Contact Us</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Refund Policy</a>
+            </div>  
+            <div>
+                <a href="#">&copy; 2021 | Foodie Heist</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+html{
+  font-size: 62.5%;
+}
+
+ /*for leaving no margings*/
+ body{
+     margin: 0rem;
+ }
+
+ /*CSS on Header*/
+ header{
+     padding: 0.1rem;
+     text-align: center;
+     background-color:rgb(189, 188, 188);
+     /*white background*/
+     color: black;
+     /*text colour*/
+     font-family: 'Heebo', sans-serif;;
+     font-size: 0.9rem;
+ }
+
+nav{
+    overflow: hidden;
+}
+
+nav a{
+    display: block;
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    text-decoration: none; /*removing underline*/
+    padding: 1.0rem 2.0rem;
+    float: right;
+    font-size: 1.7rem;
+}
+
+#signin{
+  float: left;
+}
+
+nav a:hover{
+  cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.61);
+}
+
+/*Hero-Image*/
+  .hero-image {
+    background-image:  url(pictures/hero-image.jpg);
+    height:70.0rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+
+footer a{
+  display: block;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: none; /*removing underline*/
+  padding: 1.0rem 2.0rem;
+  float: left;
+  font-size: 1.6rem;
+}
+
+.copyright{
+  float: right;
+}
+@media(max-width:998px){
+  html{
+    font-size: 55%;
+  }
+}
+@media(max-width:768px){
+  html{
+    font-size: 45%;
+  }
+}
+@media(max-width:600px){
+  html{
+    font-size: 30%;
+  }
+}
